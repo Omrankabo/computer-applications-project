@@ -1,0 +1,432 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(234, 235, 202);
+    /* background: rgb(248, 247, 244); */
+}
+nav{
+    /* making nav sticky */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.379);
+}
+nav img{
+    width: 2rem;
+    cursor: pointer;
+}
+nav .container{
+    padding: 1.1rem 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .logoHolder h1{
+    font-size: 1.9rem;
+    
+}
+.btnsCon{
+
+    width: 31%;
+}
+nav .container .btnsCon ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav .container ul li a{
+    text-transform: capitalize;
+    font-size: 1.11rem;
+    text-decoration: none ;
+    color: black;
+    transition: .3s;
+}
+nav .container ul li .navLink:hover{
+    color: rgb(98, 98, 98);
+    transition: .3s;
+}
+.btnLink{
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    padding: .3rem .6rem ;
+    transition: .3s;
+    /* after update */
+    background: rgb(252, 194, 1);
+    border: 2px solid rgb(252, 194, 1);
+    color: white !important;
+    
+}
+.btnLink:hover{
+    border: 2px solid black;
+    border-color: rgb(252, 194, 1);
+    background: transparent;
+    color: rgb(252, 194, 1) !important;
+    transition: .3s  ;
+}
+
+/* header ---------------------------*/
+header{
+    /* border: 1px solid magenta; */
+    height: 100vh;
+    background: url(../assets/heroSection.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .headContainer{
+    display: flex;
+    /* after update */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+/* header .aside{
+    width: 50%;
+    height: 89vh;
+    background: url('/vecteezy_food-truck-logo-design_8915369.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+header .headContainer .textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    width: 60%;
+    /* after update */
+    align-items: center;
+   
+} 
+header .headContainer .textContainer h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    padding: 0 0 0.4rem 0;
+    /* after update */
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+
+}
+header .headContainer .textContainer p{
+    padding: .4rem 0 ;
+    color: rgb(48, 48, 48);
+    font-size: 1rem;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* after update */
+    color: rgb(211, 211, 211);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+header .headContainer .textContainer button{
+    cursor: pointer;
+    width: 8rem;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    /* border: 2px solid black; */
+    margin-top: .4rem;
+    background: transparent;
+    transition: .3s;
+    /* after update */
+    border: 2px solid rgb(252, 194, 1);
+    color: white;
+    
+
+}
+
+header .headContainer .textContainer button:hover{
+    /* color: white; */
+    /* background: black; */
+    /* after update */
+    background: white;
+    border: none;
+    color: rgb(252, 194, 1);
+    /* color: white;
+    background: rgb(252, 194, 1); */
+    
+    transition: .3s;
+}
+
+/* about section */
+.about{
+    width: 100%;
+    height: 90vh;
+    background: white;
+    display: flex;
+}
+.imageCon{
+    width: 40%;
+    height: inherit;
+    background: url('../assets/item-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.about .aboutText{
+    width: 60%;
+    padding: 8rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about .aboutText h1{
+    font-size: 2.5rem;
+}
+.about .aboutText h2{
+    font-size: 1rem;
+    margin-bottom: .4rem;
+}
+.about .aboutText p{
+    text-justify: auto;
+}
+.about .aboutText .read{
+    color: rgb(226, 91, 33);
+    cursor: pointer;
+    transition: .4s;
+}
+.about .aboutText .read:hover{
+    text-decoration: underline;
+    transition: .4s;
+}
+
+/* menu section --------------------------- */
+.menu{
+    width: 100%;
+    padding: .41rem 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* padding-bottom:3rem ; */
+}
+.menu .menuTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+.menu .menuTitle h1{
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    /* padding-top: 1rem; */
+}
+.menu .menuTitle h1::before{
+    position: absolute;
+    content: '';
+    bottom: -15%;
+    left: 0%;
+    width: 9rem;
+    height: .3rem;
+    border-radius: 5px;
+    background: linear-gradient(to right,rgb(226, 91, 33),rgba(226, 92, 20, 0.694) ) ;
+}
+/* cards styling */
+.menu  .cardsCon{
+    /* border: 1px solid rgb(226, 91, 33); */
+    padding: 0 5rem;
+    width: 80%;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4,15rem);
+}
+.menu .cardsCon .card img{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+.menu .cardsCon .card{
+    background: white;
+    /* background: rgba(255, 255, 255, 0.337); */
+    width: 12rem;
+    border: 2px solid rgba(131, 131, 131, 0.502);
+    margin-top: .8rem;
+    transition: .3s;
+}
+.menu .cardsCon .card:hover{
+    border: 2px solid rgba(226, 91, 33, 0.505);
+    transition: .3s;
+}
+.menu .cardsCon .card:hover button{
+    border: 2px solid rgba(226, 91, 33, 0.505) !important;
+    color: rgb(226, 91, 33) !important;
+
+    transition: .3s;
+}
+.menu .cardsCon .card:hover h1 {
+    color: rgb(226, 91, 33) !important;
+    transition: .3s;
+}
+.menu .cardsCon .card:hover span {
+    color: rgb(48, 48, 48)!important;
+    transition: .3s;
+}
+
+
+.menu .cardsCon .card .cardText{
+    /* border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black; */
+    padding: 0 .3rem;
+}
+.menu .cardsCon .card .cardText h1{
+    /* color: rgb(226, 91, 33); */
+    color: black;
+    font-size: 1.1rem;
+    margin: .8rem 0;
+    /* margin-bottom: .3rem; */
+    transition: .3s;
+}
+.menu .cardsCon .card .cardText p{
+    /* color: rgb(39, 37, 36); */
+    color: rgb(48, 48, 48);
+    font-size: .8rem;
+    margin-bottom: .4rem;
+}
+.menu .cardsCon .card .cardText .orderCon{
+    /* background: rgb(226, 91, 33); */
+    padding-bottom: .3rem;
+    padding-right: .3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.menu .cardsCon .card .cardText .orderCon button{
+   background: transparent;
+   padding: .2rem .3rem;
+   border-radius: 5px;
+   border: 2px solid rgba(60, 60, 60, 0.501);
+   cursor: pointer;
+   color: rgba(60, 60, 60, 0.501);
+   transition: .3s;
+}
+.menu .cardsCon .card .cardText .orderCon button:hover{
+   background: rgb(226, 91, 33);
+   color: white !important;
+   transition: .3s;
+}
+.menu .cardsCon .card .cardText .orderCon span{
+   color: rgb(226, 91, 33);
+   transition: .3s;
+}
+
+/* order section -------------------- */
+.orders{
+    width: 100%;
+    height: 90vh;
+    /* padding: 5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.orders .orderContainer{
+    /* background: white; */
+    width: 60%;
+    height: 80%;
+    padding: 2rem;
+    display: flex;
+}
+.orders .orderContainer .orderImg{
+    width: 50%;
+    height: 100%;
+    background: url(../vecteezy_food-truck-logo-design_8915369.svg);
+    background-repeat: no-repeat;
+}
+
+.orders .orderContainer .orderText{
+    width: 50%;
+    border-right: 1px solid rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.orders .orderContainer .orderText h1{
+    text-transform: capitalize;
+    color: rgb(252, 194, 1);
+    /* text-align: center; */
+    align-self: center;
+    margin-bottom: 1rem;
+}
+.orders .orderContainer .orderText label{
+    line-height: 1.6rem;
+    color: rgb(252, 194, 1);
+
+}
+.orders .orderContainer .orderText input{
+    width: 80%;   
+    padding: .4rem;
+    margin: 0 0 .5rem;
+    border-radius: 5px;
+    border: 2px solid rgb(48, 48, 48);
+}
+
+
+.orders .orderContainer .orderText textarea{
+    border: 2px solid rgb(48, 48, 48);
+    width: 80%;   
+    resize: none;
+    border-radius: 5px;
+}
+.orders .orderContainer .orderText button{
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 2px solid rgb(252, 194, 1);
+    /* border: none; */
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    background: rgb(252, 194, 1);
+    padding: .3rem .6rem;
+    transition: .3s;
+    font-weight: 600;
+}
+.orders .orderContainer .orderText button:hover{
+
+    border: 2px solid rgb(252, 194, 1);
+    color: rgb(252, 194, 1);
+    background:transparent;
+    font-weight: 600;
+    transition: .3s;
+}
+/* .orders .orderContainer .orderText .checkCon .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* .orders .orderContainer .orderText .checkCon .cont input{
+    align-self: flex-end;
+}
+
+.orders .orderContainer .orderText .checkCon label{
+    display: block;
+    width: 8rem;
+} */
+/* 
+.orders .orderContainer .orderText .checkCon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: .5rem 0;
+} */
+
+/* footer */
+.copyR{
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: .6rem;
+}
+.copyR span{
+    color: rgb(252, 194, 1);
+}
